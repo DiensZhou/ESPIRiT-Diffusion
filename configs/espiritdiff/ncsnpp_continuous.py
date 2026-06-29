@@ -50,14 +50,14 @@ def get_config():
     sampling.mask_type = "ellip"  # ellip, uniform, random_uniform or center
     sampling.acc = "7.6"
     sampling.center = "48"
-    sampling.mask_file = "mask_random/random_302x256acc_8.8acs_48.mat"
+    sampling.mask_file = "mask_caipi/302x256caipi_acc8.8_center48.mat"
     # TODO 5
     sampling.mode = "retrospective"  # retrospective, prospective, fastMRI
     # TODO 6
     sampling.auto_tuning = False
-    sampling.snr = 0.5
-    sampling.mse = 0.3 ##### predictor_mse
-    sampling.corrector_mse = 0.2 ###
+    sampling.snr = 0.7
+    sampling.mse = 0.6 ##### predictor_mse
+    sampling.corrector_mse = 0.5 ###
     # sampling.corrector_mse = 0.2
     sampling.recon_dir = "recon_result"
 

@@ -43,8 +43,8 @@ def get_config():
     sampling.mode = "prospective"  # retrospective, prospective, fastMRI
     sampling.auto_tuning = False
     sampling.snr = 0.7
-    sampling.mse = 0.8  ##### predictor_mse
-    sampling.corrector_mse = 0.2  ###
+    sampling.mse = 0.6 ##### predictor_mse
+    sampling.corrector_mse = 0.5 ###
 
     # data
     data = config.data

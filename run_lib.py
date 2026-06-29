@@ -226,7 +226,6 @@ def sample(config, workdir):
     FLAGS.config.sampling.folder = os.path.join(
         FLAGS.workdir, config.training.estimate_csm + "_acc" + SAMPLING_FOLDER_ID
     )
-    tf.io.gfile.makedirs(FLAGS.config.sampling.folder)
 
     # Create data scaler and its inverse
     inverse_scaler = get_data_inverse_scaler(config)
